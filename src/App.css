@@ -1,0 +1,145 @@
+/* Reset global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Layout principal */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+  width: 100%;
+  align-items: center;
+  transition: all 0.1s ease;
+}
+
+/* Conteneur principal */
+.main-content {
+  max-width: 100vw;
+  min-height: calc(100vh - 64px); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* Page d'accueil */
+.main-content.home {
+  padding: 0;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+/* Grille d'articles */
+.articles-list {
+  width: 100%;
+  max-width: 1280px;
+  padding: 20px;
+}
+
+.articles-grid {
+  width: 100%;
+  max-width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  align-items: start;
+}
+
+.navbar {
+  position: relative;
+  height: 100px;
+  width: 100vw;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-bottom: 2px solid var(--border-color);
+  display: flex;          
+  align-items: center;
+  justify-content: center;
+  padding: 0;        
+}
+
+.navbar-content {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex;
+  width: 400px;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;            
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+.navbar ul li a.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+main {
+  flex: 1; 
+  width: 100%;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow-y: auto; 
+  display: flex;          
+  justify-content: center; 
+  align-items: center;
+}
+
+.home-content {
+  width: 100%;
+  min-height: calc(100vh - 64px);
+  padding: 20px;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border-top: 2px solid var(--border-color);
+}
+
+.theme-button:hover {
+  opacity: 0.8;
+}
+
+.theme-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.articles-list .articles-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  align-items: start;
+}
+

@@ -1,9 +1,6 @@
 import axios from 'axios';
 
-
-
-const ARTICLES_API_URL = 'http://localhost:5050/articles';
-
+const ARTICLES_API_URL = `${import.meta.env.VITE_API_URL}/articles`;
 
 const getAuthHeaders = () => {
     const token = localStorage.getItem('token');
@@ -23,7 +20,6 @@ export const getAllArticles = async () => {
         throw error;
     }
 };
-
 
 export const getArticleById = async (id) => {
     try {

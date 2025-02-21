@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const AUTH_API_URL = `${import.meta.env.VITE_API_URL}/auth`;
+const AUTH_API_URL = `${import.meta.env.VITE_API_URL.trim()}/auth`;
 
 const signIn = async (email, password) => {
     try {

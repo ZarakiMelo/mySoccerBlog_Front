@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const ARTICLES_API_URL = `${import.meta.env.VITE_API_URL}/articles`;
+const ARTICLES_API_URL = `${import.meta.env.VITE_API_URL.trim()}/articles`;
 
 const getAuthHeaders = () => {
     const token = localStorage.getItem('token');

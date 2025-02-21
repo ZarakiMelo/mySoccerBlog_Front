@@ -1,12 +1,54 @@
-<<<<<<< HEAD
-# mySoccerBlog_Front
-=======
-# React + Vite
+# FootBlog - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Une application de blog sur le football construite avec React et Material-UI.
 
-Currently, two official plugins are available:
+## Technologies Utilisées
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
->>>>>>> master
+- React 18
+- Vite
+- Material-UI (MUI)
+- React Router
+- Context API pour la gestion d'état
+- date-fns pour la gestion des dates
+- Axios pour les requêtes HTTP
+
+## Fonctionnalités
+
+- 🌓 Thème clair/sombre
+- 🔐 Authentification (Login/Register)
+- 📱 Design responsive
+- 📝 CRUD des articles
+- 🏷️ Filtrage par catégories
+- 👤 Gestion de profil utilisateur
+- 🚨 Système d'alertes
+
+## Installation
+
+1. Cloner le repository
+2. Installer les dépendances
+3. Lancer l'application
+
+## Utilisation
+
+1. Lancer l'application avec la commande `npm run dev`
+2. Se connecter ou créer un compte
+3. Créer, modifier et supprimer des articles
+
+
+## Backend
+
+Le backend est le repo suivant: https://github.com/ZarakiMelo/mySoccerBlog_Back.git
+
+## Auteur
+
+Ce projet a été réalisé par ZarakiMelo.
+
+## Licence
+
+Ce projet est sous licence MIT.
+
+
+
+
+    
+
